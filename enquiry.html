@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Delicious Bakery - Enquiry</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="css/style.css">
 <style>
 .accordion-btn { width:100%; padding:12px; text-align:left; cursor:pointer; background:#f5e6d3; border:none; margin-top:5px; font-weight:bold; }
@@ -58,9 +57,11 @@
 
 <div id="lightbox"><img id="lightbox-img" style="max-width:90%;max-height:90%;"></div>
 
-<!-- PART 3: LEAFLET MAP - Required -->
+<!-- PART 3: MAP - Fixed Google Maps -->
 <h3>Find Our Bakery</h3>
-<div id="map" style="height:300px;width:100%;margin:15px 0;border:2px solid #ccc;"></div>
+<div style="height:300px;width:100%;margin:15px 0;border:2px solid #ccc;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.5!2d18.4241!3d-33.9249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d085c8b8d0f%3A0x6b5a6b5a!2sRosebank%2C%20Cape%20Town!5e0!3m2!1sen!2sza!4v1700000000000" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+</div>
 
 <!-- PART 3: ENQUIRY FORM WITH VALIDATION - Required -->
 <h3>Enquiry Form - Required</h3>
@@ -79,7 +80,6 @@
 </main>
 <footer><p>&copy; <script>document.write(new Date().getFullYear())</script> Delicious Bakery - ST10502981</p></footer>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
