@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://st10502981-delicious-bakery.netlify.app/sitemap.xml

@@ -1,0 +1,70 @@
+/* Main Styles - Student: St10502981 - WEDE5020 Part 2 */
+body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#fffaf0; }
+header { background:#f8d7a0; padding:20px; text-align:center; }
+nav ul { list-style:none; background:#333; display:flex; justify-content:center; margin:0; padding:10px; }
+nav ul li { margin:0 15px; }
+nav ul li a { color:white; text-decoration:none; font-weight:bold; }
+nav ul li a:hover { color:#f8d7a0; }
+main { padding:20px; max-width:900px; margin:auto; background:white; min-height:400px; }
+footer { background:#333; color:white; text-align:center; padding:15px; margin-top:20px; }
+img { max-width:100%; height:auto; border-radius:8px; }
+form input, form textarea { width:100%; padding:8px; margin-top:5px; }
+button, input[type=submit] { background:#333; color:white; padding:10px 20px; border:none; cursor:pointer; } 
+/* Responsive - Required for marks */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* --- PART 2 FEEDBACK FIXES - DO NOT DELETE --- */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #d2691e;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid #f8d7a0;
+  outline: none;
+  background-color: #fff8e1;
+}
+
+nav ul li a:active {
+  color: #ff9800;
+}
+
+nav ul li:nth-child(odd) {
+  background-color: rgba(255,255,255,0.05);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Mobile */
+  main {
+    padding: 10px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+} 
